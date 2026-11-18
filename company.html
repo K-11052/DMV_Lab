@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Company Preparation | PlaceMentor AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="company.css">
+
+</head>
+
+<body>
+
+<!--================ SIDEBAR ================-->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<div class="logo-circle">
+
+<i class="fa-solid fa-robot"></i>
+
+</div>
+
+<h2>PlaceMentor <span>AI</span></h2>
+
+</div>
+
+<ul>
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+<span>Dashboard</span>
+</li>
+<li onclick="location.href='mentor.html'">
+<i class="fa-solid fa-comments"></i>
+<span>AI Mentor</span>
+</li>
+<li onclick="location.href='resume.html'">
+<i class="fa-solid fa-file-lines"></i>
+<span>Resume Studio</span>
+</li>
+<li onclick="location.href='careergps.html'">
+<i class="fa-solid fa-road"></i>
+<span>Career GPS</span>
+</li>
+<li onclick="location.href='coding.html'">
+<i class="fa-solid fa-laptop-code"></i>
+<span>Coding Coach</span>
+</li>
+<li onclick="location.href='interview.html'">
+<i class="fa-solid fa-microphone"></i>
+<span>Mock Interview</span>
+</li>
+<li class="active" onclick="location.href='company.html'">
+<i class="fa-solid fa-building"></i>
+<span>Company Prep</span>
+</li>
+<li onclick="location.href='analytics.html'">
+<i class="fa-solid fa-chart-line"></i>
+<span>Career Report</span>
+</li>
+<li onclick="location.href='profile.html'">
+<i class="fa-solid fa-user"></i>
+<span>Profile</span>
+</li>
+<li onclick="location.href='settings.html'">
+<i class="fa-solid fa-gear"></i>
+<span>Settings</span>
+</li>
+</ul>
+
+</aside>
+
+<!--================ MAIN =================-->
+
+<main class="main">
+
+<header>
+
+<div>
+
+<h1>Company Preparation 🏢</h1>
+
+<p>Select your dream company and get an AI-powered preparation roadmap.</p>
+
+</div>
+
+<button onclick="location.href='dashboard.html'">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Dashboard
+
+</button>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<h2>Prepare Smarter with AI</h2>
+
+<p>
+
+Choose a company and receive interview patterns, coding topics, HR questions, and a personalized preparation roadmap.
+
+</p>
+
+</div>
+
+<i class="fa-solid fa-building-columns hero-icon"></i>
+
+</section>
+
+<!-- COMPANY SELECTION -->
+
+<section class="selection-grid">
+
+<div class="selection-card">
+
+<h3>Dream Company</h3>
+
+<select id="companySelect">
+
+<option>Google</option>
+<option>Microsoft</option>
+<option>Amazon</option>
+<option>TCS</option>
+<option>Infosys</option>
+<option>Wipro</option>
+<option>Accenture</option>
+<option>Deloitte</option>
+
+</select>
+
+</div>
+
+<div class="selection-card">
+
+<h3>Role</h3>
+
+<select id="roleSelect">
+
+<option>Frontend Developer</option>
+<option>Backend Developer</option>
+<option>Full Stack Developer</option>
+<option>Software Engineer</option>
+<option>Data Analyst</option>
+
+</select>
+
+</div>
+
+<div class="selection-card">
+
+<h3>Experience</h3>
+
+<select id="experienceSelect">
+
+<option>Fresher</option>
+<option>Internship Experience</option>
+<option>1+ Years</option>
+
+</select>
+
+</div>
+
+<div class="selection-card">
+
+<h3>Generate</h3>
+
+<button id="generateBtn">
+
+Generate AI Plan
+
+</button>
+
+</div>
+
+</section>
+
+<!-- COMPANY OVERVIEW -->
+
+<section class="overview">
+
+<div class="overview-card">
+
+<h2 id="companyName">Google</h2>
+
+<p id="companyDesc">
+
+Google hires candidates with strong DSA, problem-solving, system design, and communication skills. Candidates are expected to build impactful projects and demonstrate strong fundamentals.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>Difficulty</h3>
+
+<h2>⭐⭐⭐⭐⭐</h2>
+
+</div>
+
+<div class="overview-card">
+
+<h3>Expected Package</h3>
+
+<h2>₹18 - ₹45 LPA</h2>
+
+</div>
+
+<div class="overview-card">
+
+<h3>Hiring Process</h3>
+
+<p>
+
+Resume → OA → Technical → HR
+
+</p>
+
+</div>
+
+</section>
+
+<!-- PREPARATION -->
+
+<section class="prep-grid">
+
+<div class="prep-card">
+
+<h2>AI Preparation Plan</h2>
+
+<ul id="planList">
+
+<li>✔ Arrays & Strings</li>
+
+<li>✔ JavaScript Revision</li>
+
+<li>✔ React Projects</li>
+
+<li>✔ DBMS + OS</li>
+
+<li>✔ Mock Interview</li>
+
+</ul>
+
+</div>
+
+<div class="prep-card">
+
+<h2>Most Asked Questions</h2>
+
+<ul id="questionList">
+
+<li>Tell me about yourself.</li>
+
+<li>Explain your project.</li>
+
+<li>Reverse Linked List.</li>
+
+<li>Difference between TCP & UDP.</li>
+
+<li>Explain Closures.</li>
+
+<li>SQL JOINS.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- READINESS -->
+
+<section class="readiness">
+
+<div class="score-card">
+
+<h2>AI Readiness</h2>
+
+<div class="score-circle">
+
+84%
+
+</div>
+
+<p>
+
+You are close to being interview ready.
+
+</p>
+
+</div>
+
+<div class="recommend-card">
+
+<h2>AI Recommendation</h2>
+
+<p id="recommendation">
+
+Focus on medium-level DSA, improve your communication skills, and revise your projects thoroughly before interviews.
+
+</p>
+
+<button id="startPrep">
+
+Start Preparation
+
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="company.js"></script>
+
+</body>
+
+</html>

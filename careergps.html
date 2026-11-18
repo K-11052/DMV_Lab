@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Career GPS | PlaceMentor AI</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="careergps.css">
+
+</head>
+
+<body>
+
+<!--================ SIDEBAR ================-->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-circle">
+            <i class="fa-solid fa-robot"></i>
+        </div>
+
+        <h2>PlaceMentor <span>AI</span></h2>
+
+    </div>
+
+    <ul>
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+<span>Dashboard</span>
+</li>
+<li onclick="location.href='mentor.html'">
+<i class="fa-solid fa-comments"></i>
+<span>AI Mentor</span>
+</li>
+<li onclick="location.href='resume.html'">
+<i class="fa-solid fa-file-lines"></i>
+<span>Resume Studio</span>
+</li>
+<li class="active" onclick="location.href='careergps.html'">
+<i class="fa-solid fa-road"></i>
+<span>Career GPS</span>
+</li>
+<li onclick="location.href='coding.html'">
+<i class="fa-solid fa-laptop-code"></i>
+<span>Coding Coach</span>
+</li>
+<li onclick="location.href='interview.html'">
+<i class="fa-solid fa-microphone"></i>
+<span>Mock Interview</span>
+</li>
+<li onclick="location.href='company.html'">
+<i class="fa-solid fa-building"></i>
+<span>Company Prep</span>
+</li>
+<li onclick="location.href='analytics.html'">
+<i class="fa-solid fa-chart-line"></i>
+<span>Career Report</span>
+</li>
+<li onclick="location.href='profile.html'">
+<i class="fa-solid fa-user"></i>
+<span>Profile</span>
+</li>
+<li onclick="location.href='settings.html'">
+<i class="fa-solid fa-gear"></i>
+<span>Settings</span>
+</li>
+</ul>
+
+</aside>
+
+<!--================ MAIN =================-->
+
+<main class="main">
+
+<!-- HEADER -->
+
+<header>
+
+<div>
+
+<h1>Career GPS 🧭</h1>
+
+<p>
+
+Choose your dream career and let AI create your roadmap.
+
+</p>
+
+</div>
+
+<button onclick="location.href='dashboard.html'">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Dashboard
+
+</button>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<h2>
+
+Where do you want to be in the next 6 months?
+
+</h2>
+
+<p>
+
+Your AI Mentor will build a personalized roadmap based on your goals.
+
+</p>
+
+</div>
+
+<i class="fa-solid fa-route hero-icon"></i>
+
+</section>
+
+<!-- GOALS -->
+
+<section class="goal-grid">
+
+<div class="goal-card">
+
+<h3>Dream Role</h3>
+
+<select>
+
+<option>Frontend Developer</option>
+
+<option>Full Stack Developer</option>
+
+<option>Backend Developer</option>
+
+<option>Software Engineer</option>
+
+<option>AI Engineer</option>
+
+<option>Data Analyst</option>
+
+</select>
+
+</div>
+
+<div class="goal-card">
+
+<h3>Dream Company</h3>
+
+<select>
+
+<option>Google</option>
+
+<option>Microsoft</option>
+
+<option>Amazon</option>
+
+<option>TCS</option>
+
+<option>Infosys</option>
+
+<option>Wipro</option>
+
+</select>
+
+</div>
+
+<div class="goal-card">
+
+<h3>Current Level</h3>
+
+<select>
+
+<option>Beginner</option>
+
+<option>Intermediate</option>
+
+<option>Advanced</option>
+
+</select>
+
+</div>
+
+<div class="goal-card">
+
+<h3>Generate AI Roadmap</h3>
+
+<button id="generateRoadmap">
+
+Generate
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ROADMAP -->
+
+<section class="roadmap">
+
+<h2>Your AI Career Roadmap</h2>
+
+<div class="timeline">
+
+<div class="step completed">
+
+<div class="circle">
+
+<i class="fa-solid fa-check"></i>
+
+</div>
+
+<h4>Resume Ready</h4>
+
+<p>Completed</p>
+
+</div>
+
+<div class="line"></div>
+
+<div class="step active">
+
+<div class="circle">
+
+2
+
+</div>
+
+<h4>DSA Practice</h4>
+
+<p>In Progress</p>
+
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+
+<div class="circle">
+
+3
+
+</div>
+
+<h4>Projects</h4>
+
+<p>Pending</p>
+
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+
+<div class="circle">
+
+4
+
+</div>
+
+<h4>Mock Interview</h4>
+
+<p>Pending</p>
+
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+
+<div class="circle">
+
+🏆</div>
+
+<h4>Placement</h4>
+
+<p>Target</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WEEKLY GOALS -->
+
+<section class="progress-section">
+
+<div class="progress-card">
+
+<h3>Weekly Goals</h3>
+
+<ul>
+
+<li>✔ Solve 10 DSA Questions</li>
+
+<li>✔ Build 1 Project</li>
+
+<li>✔ Improve Resume</li>
+
+<li>✔ Complete Mock Interview</li>
+
+<li>✔ Learn REST APIs</li>
+
+</ul>
+
+</div>
+
+<div class="progress-card">
+
+<h3>Recommended Skills</h3>
+
+<div class="skills">
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+<span>React</span>
+
+<span>Git</span>
+
+<span>REST API</span>
+
+<span>SQL</span>
+
+<span>Node.js</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- AI RECOMMENDATION -->
+
+<section class="ai-card">
+
+<div>
+
+<h2>AI Mentor Recommendation</h2>
+
+<p>
+
+Based on your selected career path, you should focus on React, REST APIs, GitHub Projects and medium-level DSA. If you stay consistent for 6 weeks, you'll be ready for most campus placement interviews.
+
+</p>
+
+</div>
+
+<button>
+
+Start Today's Mission
+
+</button>
+
+</section>
+
+</main>
+
+<script src="careergps.js"></script>
+
+</body>
+
+</html>

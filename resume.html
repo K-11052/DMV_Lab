@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Studio | PlaceMentor AI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="resume.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+   <aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-circle">
+            <i class="fa-solid fa-robot"></i>
+        </div>
+
+        <h2>PlaceMentor <span>AI</span></h2>
+
+    </div>
+
+    <ul>
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+<span>Dashboard</span>
+</li>
+<li onclick="location.href='mentor.html'">
+<i class="fa-solid fa-comments"></i>
+<span>AI Mentor</span>
+</li>
+<li class="active" onclick="location.href='resume.html'">
+<i class="fa-solid fa-file-lines"></i>
+<span>Resume Studio</span>
+</li>
+<li onclick="location.href='careergps.html'">
+<i class="fa-solid fa-road"></i>
+<span>Career GPS</span>
+</li>
+<li onclick="location.href='coding.html'">
+<i class="fa-solid fa-laptop-code"></i>
+<span>Coding Coach</span>
+</li>
+<li onclick="location.href='interview.html'">
+<i class="fa-solid fa-microphone"></i>
+<span>Mock Interview</span>
+</li>
+<li onclick="location.href='company.html'">
+<i class="fa-solid fa-building"></i>
+<span>Company Prep</span>
+</li>
+<li onclick="location.href='analytics.html'">
+<i class="fa-solid fa-chart-line"></i>
+<span>Career Report</span>
+</li>
+<li onclick="location.href='profile.html'">
+<i class="fa-solid fa-user"></i>
+<span>Profile</span>
+</li>
+<li onclick="location.href='settings.html'">
+<i class="fa-solid fa-gear"></i>
+<span>Settings</span>
+</li>
+</ul>
+
+</aside>
+    <!-- Main Content -->
+
+    <main class="main">
+
+        <!-- Navbar -->
+
+        <header>
+
+            <div>
+
+                <h1>Resume Studio</h1>
+
+                <p>Create, analyze and improve your resume with AI.</p>
+
+            </div>
+
+            <button class="back-btn"
+                onclick="location.href='dashboard.html'">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Dashboard
+
+            </button>
+
+        </header>
+
+        <!-- Hero -->
+
+        <section class="hero-card">
+
+            <div>
+
+                <h2>Let's Build Your Dream Resume 🚀</h2>
+
+                <p>
+
+                    Upload your resume and receive personalized guidance,
+                    recruiter insights and AI-powered improvements.
+
+                </p>
+
+            </div>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png">
+
+        </section>
+
+        <!-- Upload Options -->
+
+        <section class="option-grid">
+
+            <div class="option-card">
+
+                <i class="fa-solid fa-file-circle-plus"></i>
+
+                <h3>Build Resume</h3>
+
+                <p>
+
+                    Create a professional ATS-friendly resume from scratch.
+
+                </p>
+
+                <button>
+
+                    Start Building
+
+                </button>
+
+            </div>
+
+            <div class="option-card">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <h3>Analyze Resume</h3>
+
+                <p>
+
+                    Upload your existing resume and let AI review it.
+
+                </p>
+
+                <button>
+
+                    Upload Resume
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Upload Area -->
+
+        <section class="upload-box">
+
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+            <h2>
+
+                Drag & Drop Resume Here
+
+            </h2>
+
+            <p>
+
+                Supported Formats : PDF, DOCX
+
+            </p>
+
+            <input type="file" id="resumeUpload" hidden>
+
+            <button id="uploadBtn">
+
+                Browse Files
+
+            </button>
+
+        </section>
+
+        <!-- AI Analysis -->
+
+        <section class="analysis">
+
+            <div class="analysis-card">
+
+                <h3>ATS Score</h3>
+
+                <div class="score">
+
+                    92%
+
+                </div>
+
+            </div>
+
+            <div class="analysis-card">
+
+                <h3>Recruiter Impression</h3>
+
+                <h2>⭐⭐⭐⭐☆</h2>
+
+            </div>
+
+            <div class="analysis-card">
+
+                <h3>Placement Readiness</h3>
+
+                <div class="score green">
+
+                    High
+
+                </div>
+
+            </div>
+
+            <div class="analysis-card">
+
+                <h3>Resume Health</h3>
+
+                <div class="score">
+
+                    Excellent
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- AI Feedback -->
+
+        <section class="feedback">
+
+            <h2>
+
+                AI Resume Feedback
+
+            </h2>
+
+            <div class="chat">
+
+                <div class="bot">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    <p>
+
+                        Hi 👋
+
+                        I reviewed your resume.
+
+                        Overall, your projects are impressive and demonstrate
+                        practical experience.
+
+                        However, your summary could better highlight your
+                        strengths, and adding measurable achievements will make
+                        your resume more attractive to recruiters.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Improvement Cards -->
+
+        <section class="improvements">
+
+            <div class="improve-card">
+
+                <h3>Summary</h3>
+
+                <p>
+
+                    Make it more personalized.
+
+                </p>
+
+            </div>
+
+            <div class="improve-card">
+
+                <h3>Projects</h3>
+
+                <p>
+
+                    Mention achievements and impact.
+
+                </p>
+
+            </div>
+
+            <div class="improve-card">
+
+                <h3>Skills</h3>
+
+                <p>
+
+                    Add REST API, Git and Deployment.
+
+                </p>
+
+            </div>
+
+            <div class="improve-card">
+
+                <h3>Grammar</h3>
+
+                <p>
+
+                    Minor improvements detected.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- AI Chat -->
+
+        <section class="ask-ai">
+
+            <h2>
+
+                Ask AI About Your Resume
+
+            </h2>
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    placeholder="Ask anything about your resume...">
+
+                <button>
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+<script src="resume.js"></script>
+
+</body>
+
+</html>

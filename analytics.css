@@ -1,0 +1,839 @@
+/*========================================
+            GLOBAL
+========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    background:#F8FFFC;
+    color:#1F2937;
+    overflow-x:hidden;
+}
+
+/*========================================
+            SIDEBAR
+========================================*/
+
+.sidebar{
+
+    width:280px;
+    height:100vh;
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    background:linear-gradient(180deg,#10B981,#047857);
+
+    color:#fff;
+
+    padding:30px 22px;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.logo-circle{
+
+    width:75px;
+    height:75px;
+
+    margin:auto auto 15px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#10B981;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:34px;
+
+}
+
+.logo h2{
+
+    font-size:26px;
+
+}
+
+.logo span{
+
+    color:#D1FAE5;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 18px;
+
+    margin-bottom:10px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateX(6px);
+
+}
+
+.sidebar ul li.active{
+
+    background:#fff;
+
+    color:#10B981;
+
+    font-weight:600;
+
+}
+
+/*========================================
+            MAIN
+========================================*/
+
+.main{
+
+    margin-left:280px;
+
+    width:calc(100% - 280px);
+
+    min-height:100vh;
+
+    padding:35px;
+
+}
+
+/*========================================
+            HEADER
+========================================*/
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+header h1{
+
+    font-size:36px;
+
+    margin-bottom:8px;
+
+}
+
+header p{
+
+    color:#6B7280;
+
+}
+
+header button{
+
+    border:none;
+
+    background:#10B981;
+
+    color:#fff;
+
+    padding:14px 24px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+header button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 25px rgba(16,185,129,.25);
+
+}
+
+/*========================================
+            HERO
+========================================*/
+
+.hero{
+
+    background:linear-gradient(135deg,#10B981,#059669);
+
+    color:#fff;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    width:75%;
+
+    line-height:1.8;
+
+}
+
+.hero-icon{
+
+    font-size:90px;
+
+}
+
+/*========================================
+            TOP STATS
+========================================*/
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+    margin-bottom:40px;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(16,185,129,.15);
+
+}
+
+.stat-card h3{
+
+    color:#6B7280;
+
+    margin-bottom:15px;
+
+}
+
+.stat-card h2{
+
+    color:#10B981;
+
+    font-size:32px;
+
+}
+
+/*========================================
+        REPORT GRID
+========================================*/
+
+.report-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.report-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.report-card h2{
+
+    color:#10B981;
+
+    margin-bottom:25px;
+
+}
+
+/*========================================
+        SKILL BARS
+========================================*/
+
+.skill{
+
+    margin-bottom:25px;
+
+}
+
+.skill:last-child{
+
+    margin-bottom:0;
+
+}
+
+.skill span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.bar{
+
+    width:100%;
+
+    height:14px;
+
+    background:#E5E7EB;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.fill{
+
+    height:100%;
+
+    border-radius:30px;
+
+    background:linear-gradient(90deg,#10B981,#34D399);
+
+}
+
+.fill1{
+
+    width:92%;
+
+}
+
+.fill2{
+
+    width:78%;
+
+}
+
+.fill3{
+
+    width:84%;
+
+}
+
+.fill4{
+
+    width:86%;
+
+}
+
+.fill5{
+
+    width:88%;
+
+}
+
+/*========================================
+        WEEKLY CHART
+========================================*/
+
+.chart-area{
+
+    height:260px;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    justify-content:space-between;
+
+    gap:12px;
+
+    margin-top:30px;
+
+}
+
+.chart-bar{
+
+    flex:1;
+
+    border-radius:12px 12px 0 0;
+
+    background:linear-gradient(to top,#10B981,#34D399);
+
+    transition:.4s;
+
+}
+
+.chart-bar:hover{
+
+    opacity:.8;
+
+}
+
+.h1{height:45%;}
+.h2{height:60%;}
+.h3{height:55%;}
+.h4{height:80%;}
+.h5{height:72%;}
+.h6{height:92%;}
+.h7{height:100%;}
+
+.days{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:15px;
+
+    color:#6B7280;
+
+    font-size:14px;
+
+}
+/*========================================
+            AI INSIGHTS
+========================================*/
+
+.insights{
+
+    display:grid;
+
+    grid-template-columns:1fr 350px;
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.insight-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.insight-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(16,185,129,.15);
+
+}
+
+.insight-card h2{
+
+    color:#10B981;
+
+    margin-bottom:20px;
+
+}
+
+.insight-card ul{
+
+    list-style:none;
+
+}
+
+.insight-card ul li{
+
+    margin-bottom:18px;
+
+    color:#4B5563;
+
+    line-height:1.7;
+
+}
+
+.prediction{
+
+    width:170px;
+
+    height:170px;
+
+    margin:25px auto;
+
+    border-radius:50%;
+
+    background:#ECFDF5;
+
+    border:10px solid #10B981;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    font-weight:700;
+
+    color:#10B981;
+
+}
+
+.insight-card p{
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.insight-card button{
+
+    width:100%;
+
+    border:none;
+
+    background:#10B981;
+
+    color:#fff;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.insight-card button:hover{
+
+    background:#059669;
+
+    transform:translateY(-3px);
+
+}
+
+/*========================================
+            ANIMATIONS
+========================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.stat-card,
+.report-card,
+.insight-card{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes float{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+.hero-icon{
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+/*========================================
+        SIDEBAR SCROLLBAR
+========================================*/
+
+.sidebar::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.sidebar::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+
+    background:#34D399;
+
+    border-radius:20px;
+
+}
+
+/*========================================
+            RESPONSIVE
+========================================*/
+
+@media(max-width:1200px){
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.report-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.insights{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.sidebar{
+
+width:90px;
+
+padding:20px 10px;
+
+}
+
+.logo h2,
+.sidebar ul li span{
+
+display:none;
+
+}
+
+.logo-circle{
+
+width:60px;
+
+height:60px;
+
+font-size:28px;
+
+}
+
+.sidebar ul li{
+
+justify-content:center;
+
+padding:18px 0;
+
+}
+
+.main{
+
+margin-left:90px;
+
+width:calc(100% - 90px);
+
+padding:25px;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:25px;
+
+}
+
+.hero p{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+.main{
+
+padding:18px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.report-card,
+.insight-card{
+
+padding:20px;
+
+}
+
+.prediction{
+
+width:140px;
+
+height:140px;
+
+font-size:32px;
+
+}
+
+.chart-area{
+
+height:200px;
+
+}
+
+.days{
+
+font-size:12px;
+
+}
+
+}

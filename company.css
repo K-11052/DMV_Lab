@@ -1,0 +1,820 @@
+/*========================================
+            GLOBAL
+========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    background:#F8FFFC;
+    color:#1F2937;
+    overflow-x:hidden;
+}
+
+/*========================================
+            SIDEBAR
+========================================*/
+
+.sidebar{
+
+    width:280px;
+    height:100vh;
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    background:linear-gradient(180deg,#10B981,#047857);
+
+    color:#fff;
+
+    padding:30px 22px;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+}
+
+.logo{
+
+    text-align:center;
+    margin-bottom:45px;
+
+}
+
+.logo-circle{
+
+    width:75px;
+    height:75px;
+
+    margin:auto auto 15px;
+
+    border-radius:50%;
+
+    background:#fff;
+    color:#10B981;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:34px;
+
+}
+
+.logo h2{
+
+    font-size:26px;
+
+}
+
+.logo span{
+
+    color:#D1FAE5;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 18px;
+
+    margin-bottom:10px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateX(6px);
+
+}
+
+.sidebar ul li.active{
+
+    background:#fff;
+
+    color:#10B981;
+
+    font-weight:600;
+
+}
+
+/*========================================
+            MAIN
+========================================*/
+
+.main{
+
+    margin-left:280px;
+
+    width:calc(100% - 280px);
+
+    padding:35px;
+
+    min-height:100vh;
+
+}
+
+/*========================================
+            HEADER
+========================================*/
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+header h1{
+
+    font-size:36px;
+
+    margin-bottom:8px;
+
+}
+
+header p{
+
+    color:#6B7280;
+
+}
+
+header button{
+
+    border:none;
+
+    background:#10B981;
+
+    color:#fff;
+
+    padding:14px 25px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+header button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 25px rgba(16,185,129,.25);
+
+}
+
+/*========================================
+            HERO
+========================================*/
+
+.hero{
+
+    background:linear-gradient(135deg,#10B981,#059669);
+
+    color:#fff;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    width:75%;
+
+    line-height:1.8;
+
+}
+
+.hero-icon{
+
+    font-size:90px;
+
+}
+
+/*========================================
+        COMPANY SELECTION
+========================================*/
+
+.selection-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+    margin-bottom:40px;
+
+}
+
+.selection-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.selection-card h3{
+
+    color:#10B981;
+
+    margin-bottom:15px;
+
+}
+
+.selection-card select{
+
+    width:100%;
+
+    padding:15px;
+
+    border:2px solid #E5E7EB;
+
+    border-radius:14px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.selection-card select:focus{
+
+    border-color:#10B981;
+
+}
+
+.selection-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#10B981;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.selection-card button:hover{
+
+    background:#059669;
+
+    transform:translateY(-3px);
+
+}
+
+/*========================================
+        COMPANY OVERVIEW
+========================================*/
+
+.overview{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:22px;
+
+    margin-bottom:40px;
+
+}
+
+.overview-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.overview-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.overview-card h2{
+
+    color:#10B981;
+
+    margin-bottom:15px;
+
+}
+
+.overview-card h3{
+
+    margin-bottom:15px;
+
+    color:#374151;
+
+}
+
+.overview-card p{
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+}
+/*========================================
+        PREPARATION SECTION
+========================================*/
+
+.prep-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.prep-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.prep-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(16,185,129,.15);
+
+}
+
+.prep-card h2{
+
+    color:#10B981;
+
+    margin-bottom:20px;
+
+}
+
+.prep-card ul{
+
+    list-style:none;
+
+}
+
+.prep-card li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid #E5E7EB;
+
+    color:#4B5563;
+
+    line-height:1.6;
+
+}
+
+.prep-card li:last-child{
+
+    border:none;
+
+}
+
+/*========================================
+        READINESS
+========================================*/
+
+.readiness{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.score-card,
+.recommend-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.score-card{
+
+    text-align:center;
+
+}
+
+.score-card h2{
+
+    margin-bottom:20px;
+
+    color:#10B981;
+
+}
+
+.score-circle{
+
+    width:160px;
+
+    height:160px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#ECFDF5;
+
+    border:10px solid #10B981;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:#10B981;
+
+}
+
+.score-card p{
+
+    color:#6B7280;
+
+    line-height:1.7;
+
+}
+
+.recommend-card h2{
+
+    color:#10B981;
+
+    margin-bottom:18px;
+
+}
+
+.recommend-card p{
+
+    color:#4B5563;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+.recommend-card button{
+
+    border:none;
+
+    background:#10B981;
+
+    color:#fff;
+
+    padding:15px 30px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.recommend-card button:hover{
+
+    background:#059669;
+
+    transform:translateY(-3px);
+
+}
+
+/*========================================
+        ANIMATIONS
+========================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.selection-card,
+.overview-card,
+.prep-card,
+.score-card,
+.recommend-card{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes float{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+.hero-icon{
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+/*========================================
+        SIDEBAR SCROLLBAR
+========================================*/
+
+.sidebar::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.sidebar::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+
+    background:#34D399;
+
+    border-radius:20px;
+
+}
+
+/*========================================
+        RESPONSIVE
+========================================*/
+
+@media(max-width:1200px){
+
+.selection-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.overview{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.readiness{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.sidebar{
+
+width:90px;
+
+padding:20px 10px;
+
+}
+
+.logo h2,
+.sidebar ul li span{
+
+display:none;
+
+}
+
+.logo-circle{
+
+width:60px;
+
+height:60px;
+
+font-size:28px;
+
+}
+
+.sidebar ul li{
+
+justify-content:center;
+
+padding:18px 0;
+
+}
+
+.main{
+
+margin-left:90px;
+
+width:calc(100% - 90px);
+
+padding:25px;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:25px;
+
+}
+
+.hero p{
+
+width:100%;
+
+}
+
+.prep-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.selection-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.overview{
+
+grid-template-columns:1fr;
+
+}
+
+header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+.main{
+
+padding:18px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.score-circle{
+
+width:130px;
+
+height:130px;
+
+font-size:30px;
+
+}
+
+.score-card,
+.recommend-card,
+.prep-card,
+.overview-card{
+
+padding:22px;
+
+}
+
+}

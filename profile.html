@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile | PlaceMentor AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="profile.css">
+
+</head>
+
+<body>
+
+<!--================ SIDEBAR ================-->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<div class="logo-circle">
+<i class="fa-solid fa-robot"></i>
+</div>
+
+<h2>PlaceMentor <span>AI</span></h2>
+
+</div>
+
+<ul>
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+<span>Dashboard</span>
+</li>
+<li onclick="location.href='mentor.html'">
+<i class="fa-solid fa-comments"></i>
+<span>AI Mentor</span>
+</li>
+<li onclick="location.href='resume.html'">
+<i class="fa-solid fa-file-lines"></i>
+<span>Resume Studio</span>
+</li>
+<li onclick="location.href='careergps.html'">
+<i class="fa-solid fa-road"></i>
+<span>Career GPS</span>
+</li>
+<li onclick="location.href='coding.html'">
+<i class="fa-solid fa-laptop-code"></i>
+<span>Coding Coach</span>
+</li>
+<li onclick="location.href='interview.html'">
+<i class="fa-solid fa-microphone"></i>
+<span>Mock Interview</span>
+</li>
+<li onclick="location.href='company.html'">
+<i class="fa-solid fa-building"></i>
+<span>Company Prep</span>
+</li>
+<li onclick="location.href='analytics.html'">
+<i class="fa-solid fa-chart-line"></i>
+<span>Career Report</span>
+</li>
+<li class="active" onclick="location.href='profile.html'">
+<i class="fa-solid fa-user"></i>
+<span>Profile</span>
+</li>
+<li onclick="location.href='settings.html'">
+<i class="fa-solid fa-gear"></i>
+<span>Settings</span>
+</li>
+</ul>
+
+</aside>
+
+<!--================ MAIN =================-->
+
+<main class="main">
+
+<header>
+
+<div>
+
+<h1>My Profile 👤</h1>
+
+<p>Your AI Placement Journey at one place.</p>
+
+</div>
+
+<button onclick="location.href='dashboard.html'">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Dashboard
+
+</button>
+
+</header>
+
+<!-- PROFILE CARD -->
+
+<section class="profile-card">
+
+<div class="profile-left">
+
+<img src="https://i.pravatar.cc/220?img=12" alt="Profile">
+
+<h2>Khushi Singh</h2>
+
+<p>Computer Science Student</p>
+
+<div class="badges">
+
+<span>🏆 Top Learner</span>
+
+<span>🔥 18 Day Streak</span>
+
+<span>💻 Coding Enthusiast</span>
+
+</div>
+
+</div>
+
+<div class="profile-right">
+
+<div class="info">
+
+<div>
+
+<h4>Email</h4>
+
+<p>khushi@example.com</p>
+
+</div>
+
+<div>
+
+<h4>University</h4>
+
+<p>Amity University</p>
+
+</div>
+
+<div>
+
+<h4>Dream Company</h4>
+
+<p>Google</p>
+
+</div>
+
+<div>
+
+<h4>Dream Role</h4>
+
+<p>Full Stack Developer</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h3>Placement Readiness</h3>
+
+<h2>87%</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Projects</h3>
+
+<h2>8</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Mock Interviews</h3>
+
+<h2>14</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Problems Solved</h3>
+
+<h2>124</h2>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section class="skills-section">
+
+<div class="skill-card">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+<span>React</span>
+
+<span>Node.js</span>
+
+<span>MongoDB</span>
+
+<span>Git</span>
+
+<span>REST API</span>
+
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h2>Achievements</h2>
+
+<ul>
+
+<li>🏅 Resume Score Above 90%</li>
+
+<li>🏅 18 Day Coding Streak</li>
+
+<li>🏅 Completed 8 Projects</li>
+
+<li>🏅 Mock Interview Excellence</li>
+
+<li>🏅 AI Recommended Candidate</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- AI SUMMARY -->
+
+<section class="summary-card">
+
+<div>
+
+<h2>AI Career Summary</h2>
+
+<p>
+
+You have shown consistent growth in coding, resume building and interview preparation.
+
+Focus on advanced DSA and one more production-level full stack project to become placement ready for top companies.
+
+</p>
+
+</div>
+
+<button id="editProfile">
+
+Edit Profile
+
+</button>
+
+</section>
+
+</main>
+
+<script src="profile.js"></script>
+
+</body>
+
+</html>

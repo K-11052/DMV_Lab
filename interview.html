@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mock Interview | PlaceMentor AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="interview.css">
+
+</head>
+
+<body>
+
+<!--================ SIDEBAR ================-->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<div class="logo-circle">
+
+<i class="fa-solid fa-robot"></i>
+
+</div>
+
+<h2>PlaceMentor <span>AI</span></h2>
+
+</div>
+
+<ul>
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+<span>Dashboard</span>
+</li>
+<li onclick="location.href='mentor.html'">
+<i class="fa-solid fa-comments"></i>
+<span>AI Mentor</span>
+</li>
+<li onclick="location.href='resume.html'">
+<i class="fa-solid fa-file-lines"></i>
+<span>Resume Studio</span>
+</li>
+<li onclick="location.href='careergps.html'">
+<i class="fa-solid fa-road"></i>
+<span>Career GPS</span>
+</li>
+<li onclick="location.href='coding.html'">
+<i class="fa-solid fa-laptop-code"></i>
+<span>Coding Coach</span>
+</li>
+<li class="active" onclick="location.href='interview.html'">
+<i class="fa-solid fa-microphone"></i>
+<span>Mock Interview</span>
+</li>
+<li onclick="location.href='company.html'">
+<i class="fa-solid fa-building"></i>
+<span>Company Prep</span>
+</li>
+<li onclick="location.href='analytics.html'">
+<i class="fa-solid fa-chart-line"></i>
+<span>Career Report</span>
+</li>
+<li onclick="location.href='profile.html'">
+<i class="fa-solid fa-user"></i>
+<span>Profile</span>
+</li>
+<li onclick="location.href='settings.html'">
+<i class="fa-solid fa-gear"></i>
+<span>Settings</span>
+</li>
+</ul>
+
+</aside>
+
+<!--================ MAIN =================-->
+
+<main class="main">
+
+<header>
+
+<div>
+
+<h1>AI Mock Interview 🎤</h1>
+
+<p>Practice with your personal AI interviewer.</p>
+
+</div>
+
+<button onclick="location.href='dashboard.html'">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Dashboard
+
+</button>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<h2>Ready for your interview?</h2>
+
+<p>
+
+Choose the interview type and company.
+The AI interviewer will simulate a real interview experience.
+
+</p>
+
+</div>
+
+<i class="fa-solid fa-user-tie hero-icon"></i>
+
+</section>
+
+<!-- SETTINGS -->
+
+<section class="settings-grid">
+
+<div class="setting-card">
+
+<h3>Interview Type</h3>
+
+<select id="interviewType">
+
+<option>HR Interview</option>
+
+<option>Technical Interview</option>
+
+<option>Managerial Interview</option>
+
+</select>
+
+</div>
+
+<div class="setting-card">
+
+<h3>Company</h3>
+
+<select id="company">
+
+<option>Google</option>
+
+<option>TCS</option>
+
+<option>Microsoft</option>
+
+<option>Amazon</option>
+
+<option>Infosys</option>
+
+<option>Wipro</option>
+
+</select>
+
+</div>
+
+<div class="setting-card">
+
+<h3>Difficulty</h3>
+
+<select id="difficulty">
+
+<option>Easy</option>
+
+<option>Medium</option>
+
+<option>Hard</option>
+
+</select>
+
+</div>
+
+<div class="setting-card">
+
+<h3>Interview</h3>
+
+<button id="startInterview">
+
+Start Interview
+
+</button>
+
+</div>
+
+</section>
+
+<!-- INTERVIEW AREA -->
+
+<section class="interview-container">
+
+<!-- Camera -->
+
+<div class="camera-card">
+
+<div class="camera">
+
+<i class="fa-solid fa-video"></i>
+
+</div>
+
+<h3>Your Camera</h3>
+
+<div class="status">
+
+<span class="live-dot"></span>
+
+Camera Ready
+
+</div>
+
+</div>
+
+<!-- AI -->
+
+<div class="ai-card">
+
+<div class="ai-avatar">
+
+<i class="fa-solid fa-robot"></i>
+
+</div>
+
+<h2>AI Interviewer</h2>
+
+<p id="question">
+
+Hello 👋
+
+Let's begin.
+
+Tell me about yourself.
+
+</p>
+
+<div class="controls">
+
+<button id="micBtn">
+
+<i class="fa-solid fa-microphone"></i>
+
+Mic
+
+</button>
+
+<button id="nextBtn">
+
+Next Question
+
+</button>
+
+<button id="endBtn">
+
+End Interview
+
+</button>
+
+</div>
+
+<div class="timer">
+
+⏱ <span id="timer">00:00</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PERFORMANCE -->
+
+<section class="performance">
+
+<div class="performance-card">
+
+<h3>Communication</h3>
+
+<div class="progress">
+
+<div class="progress-fill fill1"></div>
+
+</div>
+
+<span>90%</span>
+
+</div>
+
+<div class="performance-card">
+
+<h3>Confidence</h3>
+
+<div class="progress">
+
+<div class="progress-fill fill2"></div>
+
+</div>
+
+<span>82%</span>
+
+</div>
+
+<div class="performance-card">
+
+<h3>Technical Skills</h3>
+
+<div class="progress">
+
+<div class="progress-fill fill3"></div>
+
+</div>
+
+<span>88%</span>
+
+</div>
+
+<div class="performance-card">
+
+<h3>Overall</h3>
+
+<div class="progress">
+
+<div class="progress-fill fill4"></div>
+
+</div>
+
+<span>87%</span>
+
+</div>
+
+</section>
+
+<!-- FEEDBACK -->
+
+<section class="feedback">
+
+<h2>AI Feedback</h2>
+
+<div class="feedback-card">
+
+<ul>
+
+<li>✅ Good communication skills.</li>
+
+<li>✅ Clear explanation of projects.</li>
+
+<li>✅ Strong technical understanding.</li>
+
+<li>⚠ Improve eye contact.</li>
+
+<li>⚠ Keep answers more concise.</li>
+
+<li>💡 Practice behavioral questions.</li>
+
+</ul>
+
+<button id="downloadBtn">
+
+<i class="fa-solid fa-download"></i>
+
+Download Interview Report
+
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="interview.js"></script>
+
+</body>
+
+</html>

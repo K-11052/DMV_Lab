@@ -1,0 +1,961 @@
+/*========================================
+            GLOBAL
+========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    background:#F8FFFC;
+    color:#1F2937;
+    overflow-x:hidden;
+}
+
+/*========================================
+            SIDEBAR
+========================================*/
+
+.sidebar{
+
+    width:280px;
+    height:100vh;
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    background:linear-gradient(180deg,#10B981,#047857);
+
+    color:#fff;
+
+    padding:30px 22px;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+}
+
+.logo{
+
+    text-align:center;
+    margin-bottom:45px;
+
+}
+
+.logo-circle{
+
+    width:75px;
+    height:75px;
+
+    margin:auto auto 15px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#10B981;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:34px;
+
+}
+
+.logo h2{
+
+    font-size:26px;
+
+}
+
+.logo span{
+
+    color:#D1FAE5;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 18px;
+
+    margin-bottom:10px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateX(6px);
+
+}
+
+.sidebar ul li.active{
+
+    background:#fff;
+
+    color:#10B981;
+
+    font-weight:600;
+
+}
+
+/*========================================
+            MAIN
+========================================*/
+
+.main{
+
+    margin-left:280px;
+
+    width:calc(100% - 280px);
+
+    min-height:100vh;
+
+    padding:35px;
+
+}
+
+/*========================================
+            HEADER
+========================================*/
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+header h1{
+
+    font-size:36px;
+
+    margin-bottom:8px;
+
+}
+
+header p{
+
+    color:#6B7280;
+
+}
+
+header button{
+
+    border:none;
+
+    background:#10B981;
+
+    color:#fff;
+
+    padding:14px 25px;
+
+    border-radius:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+header button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 25px rgba(16,185,129,.25);
+
+}
+
+/*========================================
+            HERO
+========================================*/
+
+.hero{
+
+    background:linear-gradient(135deg,#10B981,#059669);
+
+    color:#fff;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    width:75%;
+
+    line-height:1.8;
+
+}
+
+.hero-icon{
+
+    font-size:90px;
+
+    opacity:.9;
+
+}
+
+/*========================================
+        SETTINGS GRID
+========================================*/
+
+.settings-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+    margin-bottom:40px;
+
+}
+
+.setting-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.setting-card h3{
+
+    color:#10B981;
+
+    margin-bottom:15px;
+
+}
+
+.setting-card select{
+
+    width:100%;
+
+    padding:15px;
+
+    border:2px solid #E5E7EB;
+
+    border-radius:14px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.setting-card select:focus{
+
+    border-color:#10B981;
+
+}
+
+.setting-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#10B981;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.setting-card button:hover{
+
+    background:#059669;
+
+}
+
+/*========================================
+        INTERVIEW SECTION
+========================================*/
+
+.interview-container{
+
+    display:grid;
+
+    grid-template-columns:350px 1fr;
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.camera-card,
+.ai-card{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.camera{
+
+    width:100%;
+
+    height:260px;
+
+    background:#ECFDF5;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:70px;
+
+    color:#10B981;
+
+    margin-bottom:20px;
+
+}
+
+.camera-card h3{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+.status{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:600;
+
+    color:#10B981;
+
+}
+
+.live-dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#10B981;
+
+    animation:pulseDot 1s infinite;
+
+}
+
+.ai-avatar{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#10B981;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+/*========================================
+            AI CARD
+========================================*/
+
+.ai-card h2{
+
+    margin-bottom:15px;
+
+    color:#10B981;
+
+}
+
+.ai-card p{
+
+    background:#ECFDF5;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+    min-height:130px;
+
+}
+
+.controls{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.controls button{
+
+    flex:1;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#10B981;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.controls button:hover{
+
+    background:#059669;
+
+    transform:translateY(-3px);
+
+}
+
+.timer{
+
+    text-align:center;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#10B981;
+
+}
+
+/*========================================
+        PERFORMANCE
+========================================*/
+
+.performance{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+    margin-bottom:40px;
+
+}
+
+.performance-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.performance-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.performance-card h3{
+
+    margin-bottom:15px;
+
+    color:#10B981;
+
+}
+
+.progress{
+
+    width:100%;
+
+    height:12px;
+
+    background:#E5E7EB;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-bottom:15px;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:30px;
+
+    background:linear-gradient(90deg,#10B981,#34D399);
+
+}
+
+.fill1{
+
+    width:90%;
+
+}
+
+.fill2{
+
+    width:82%;
+
+}
+
+.fill3{
+
+    width:88%;
+
+}
+
+.fill4{
+
+    width:87%;
+
+}
+
+.performance-card span{
+
+    font-weight:700;
+
+    color:#059669;
+
+}
+
+/*========================================
+        FEEDBACK
+========================================*/
+
+.feedback{
+
+    margin-bottom:40px;
+
+}
+
+.feedback h2{
+
+    margin-bottom:20px;
+
+}
+
+.feedback-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.feedback-card ul{
+
+    list-style:none;
+
+}
+
+.feedback-card li{
+
+    margin-bottom:18px;
+
+    font-size:16px;
+
+    color:#374151;
+
+}
+
+.feedback-card button{
+
+    margin-top:25px;
+
+    border:none;
+
+    background:#10B981;
+
+    color:#fff;
+
+    padding:15px 28px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.feedback-card button:hover{
+
+    background:#059669;
+
+    transform:translateY(-3px);
+
+}
+
+/*========================================
+        SIDEBAR SCROLLBAR
+========================================*/
+
+.sidebar::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.sidebar::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+
+    background:#34D399;
+
+    border-radius:20px;
+
+}
+
+/*========================================
+            ANIMATIONS
+========================================*/
+
+@keyframes pulseDot{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.4);
+
+        opacity:.4;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes float{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+.hero-icon{
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.setting-card,
+.camera-card,
+.ai-card,
+.performance-card,
+.feedback-card{
+
+    animation:fadeUp .7s ease;
+
+}
+
+/*========================================
+            RESPONSIVE
+========================================*/
+
+@media(max-width:1200px){
+
+.settings-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.performance{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.interview-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.sidebar{
+
+width:90px;
+
+padding:20px 10px;
+
+}
+
+.logo h2,
+.sidebar ul li span{
+
+display:none;
+
+}
+
+.logo-circle{
+
+width:60px;
+
+height:60px;
+
+font-size:28px;
+
+}
+
+.sidebar ul li{
+
+justify-content:center;
+
+padding:18px 0;
+
+}
+
+.main{
+
+margin-left:90px;
+
+width:calc(100% - 90px);
+
+padding:25px;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:20px;
+
+}
+
+.hero p{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.settings-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.performance{
+
+grid-template-columns:1fr;
+
+}
+
+.controls{
+
+flex-direction:column;
+
+}
+
+header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+.main{
+
+padding:18px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.camera{
+
+height:220px;
+
+}
+
+.ai-card,
+.feedback-card{
+
+padding:20px;
+
+}
+
+.performance-card{
+
+padding:20px;
+
+}
+
+}

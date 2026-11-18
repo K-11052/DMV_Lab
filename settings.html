@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings | PlaceMentor AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="settings.css">
+
+</head>
+
+<body>
+
+<!--================ SIDEBAR ================-->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<div class="logo-circle">
+
+<i class="fa-solid fa-robot"></i>
+
+</div>
+
+<h2>PlaceMentor <span>AI</span></h2>
+
+</div>
+
+<ul>
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+<span>Dashboard</span>
+</li>
+<li onclick="location.href='mentor.html'">
+<i class="fa-solid fa-comments"></i>
+<span>AI Mentor</span>
+</li>
+<li onclick="location.href='resume.html'">
+<i class="fa-solid fa-file-lines"></i>
+<span>Resume Studio</span>
+</li>
+<li onclick="location.href='careergps.html'">
+<i class="fa-solid fa-road"></i>
+<span>Career GPS</span>
+</li>
+<li onclick="location.href='coding.html'">
+<i class="fa-solid fa-laptop-code"></i>
+<span>Coding Coach</span>
+</li>
+<li onclick="location.href='interview.html'">
+<i class="fa-solid fa-microphone"></i>
+<span>Mock Interview</span>
+</li>
+<li onclick="location.href='company.html'">
+<i class="fa-solid fa-building"></i>
+<span>Company Prep</span>
+</li>
+<li onclick="location.href='analytics.html'">
+<i class="fa-solid fa-chart-line"></i>
+<span>Career Report</span>
+</li>
+<li onclick="location.href='profile.html'">
+<i class="fa-solid fa-user"></i>
+<span>Profile</span>
+</li>
+<li class="active" onclick="location.href='settings.html'">
+<i class="fa-solid fa-gear"></i>
+<span>Settings</span>
+</li>
+</ul>
+
+</aside>
+
+<!--================ MAIN =================-->
+
+<main class="main">
+
+<header>
+
+<div>
+
+<h1>Settings ⚙️</h1>
+
+<p>Manage your PlaceMentor AI account and preferences.</p>
+
+</div>
+
+<button onclick="location.href='dashboard.html'">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Dashboard
+
+</button>
+
+</header>
+
+<!-- SETTINGS GRID -->
+
+<section class="settings-grid">
+
+<div class="setting-card">
+
+<h2><i class="fa-solid fa-user"></i> Account</h2>
+
+<div class="setting-item">
+
+<span>Name</span>
+
+<input type="text" value="Khushi Singh">
+
+</div>
+
+<div class="setting-item">
+
+<span>Email</span>
+
+<input type="email" value="khushi@example.com">
+
+</div>
+
+</div>
+
+<div class="setting-card">
+
+<h2><i class="fa-solid fa-bell"></i> Notifications</h2>
+
+<div class="toggle">
+
+<span>Email Notifications</span>
+
+<label class="switch">
+
+<input type="checkbox" checked id="emailNotify">
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+<div class="toggle">
+
+<span>Placement Alerts</span>
+
+<label class="switch">
+
+<input type="checkbox" checked id="placementNotify">
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+<div class="toggle">
+
+<span>Interview Reminders</span>
+
+<label class="switch">
+
+<input type="checkbox" id="interviewNotify">
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+</div>
+
+<div class="setting-card">
+
+<h2><i class="fa-solid fa-lock"></i> Privacy</h2>
+
+<div class="toggle">
+
+<span>Public Profile</span>
+
+<label class="switch">
+
+<input type="checkbox">
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+<div class="toggle">
+
+<span>Share Progress</span>
+
+<label class="switch">
+
+<input type="checkbox" checked>
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+</div>
+
+<div class="setting-card">
+
+<h2><i class="fa-solid fa-palette"></i> Appearance</h2>
+
+<div class="toggle">
+
+<span>Dark Mode</span>
+
+<label class="switch">
+
+<input type="checkbox" id="darkMode">
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SUPPORT -->
+
+<section class="support-card">
+
+<div>
+
+<h2>Help & Support</h2>
+
+<p>
+
+Need assistance? Contact our support team or explore the FAQs.
+
+</p>
+
+</div>
+
+<div class="buttons">
+
+<button id="saveBtn">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Changes
+
+</button>
+
+<button id="logoutBtn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="settings.js"></script>
+
+</body>
+
+</html>
